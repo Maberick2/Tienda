@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://images7.alphacoders.com/656/656352.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #1eded8; /* Color de respaldo */
+    color: rgb(0, 0, 0);
+}
+
+header {
+    background-color: #EB3349; /* Color del header */
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #49a09d;
+    background-color: #060404;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+/* Estilo del campo de búsqueda */
+#buscador-productos {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1rem;
+    width: 80%;
+    max-width: 600px;
+    border: 2px solid #EB3349;
+    border-radius: 5px;
+}
+
+/* Estilo general del contenedor de productos */
+#productos-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+    justify-content: space-around; /* Espaciado uniforme entre productos */
+    padding: 20px;
+}
+
+/* Estilo para cada producto */
+.producto {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    border: 1px solid #ddd; /* Borde ligero */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 15px;
+    padding: 15px;
+    width: 200px;
+    text-align: center; /* Centrar contenido */
+    transition: transform 0.2s;
+}
+
+.producto:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+/* Estilo para la imagen del producto */
+.producto-imagen {
+    max-width: 100%;
+    height: auto; /* Mantiene proporción de la imagen */
+    border-radius: 10px;
+}
+
+/* Estilo para el título del producto */
+.producto h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Estilo para el precio del producto */
+.producto p {
+    color: #777;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #EB3349;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}

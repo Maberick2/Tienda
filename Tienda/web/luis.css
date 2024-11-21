@@ -1,0 +1,121 @@
+/* Estilos generales */
+html, body {
+    height: 100%; /* Asegura que el html y body ocupen el 100% de la altura de la ventana */
+    margin: 0; /* Elimina el margen por defecto */
+    display: flex; /* Usamos flexbox para organizar el contenido */
+    flex-direction: column; /* Organiza el contenido en una columna */
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Fuente moderna */
+    background-image: url('https://images7.alphacoders.com/656/656352.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #1eded8; /* Color de respaldo */
+    color: #333; /* Color del texto más suave para mayor legibilidad */
+    flex: 1; /* Permite que el body crezca y ocupe espacio disponible */
+}
+
+header {
+    background-color: rgba(235, 51, 73, 0.9); /* Color del header con transparencia */
+    padding: 40px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo h1 {
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra en el texto */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave */
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px; /* Borde más redondeado */
+}
+
+.carousel-section {
+    margin: 20px 0; /* Margen para separación */
+    max-width: 800px; /* Ancho máximo del carrusel */
+    margin: 20px auto; /* Centrar el carrusel */
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
+}
+
+.welcome-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra en el texto */
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 60px; /* Espacio adicional para el footer */
+}
+
+footer {
+    background-color: #EB3349; /* Color del footer */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.3); /* Sombra en el footer */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+/* Estilos adicionales para mejorar la presentación en pantallas pequeñas */
+@media (max-width: 768px) {
+    nav .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

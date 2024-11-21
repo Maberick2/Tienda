@@ -1,0 +1,116 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://images7.alphacoders.com/656/656352.jpg'); /* Puedes cambiar la imagen de fondo aquí */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #1eded8; /* Color de respaldo */
+    color: rgb(0, 0, 0);
+}
+
+header {
+    background-color: #EB3349; /* Color del header */
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #49a09d;
+    background-color: #060404;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.logo h1 {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: rgb(254, 255, 255); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #1e2424;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #EB3349;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #EB3349; /* Color del footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
